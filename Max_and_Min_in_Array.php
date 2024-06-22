@@ -1,25 +1,24 @@
-function findMaxMin($arr) {
+function findMaxMinDifferent($arr) {
     if (empty($arr)) {
-        return null; 
+        return null;
     }
 
-    $maxValue = $arr[0];
-    $minValue = $arr[0];
+    $max_value = $arr[0];
+    $min_value = $arr[0];
 
-    foreach ($arr as $value) {
-        if ($value > $maxValue) {
-            $maxValue = $value;
-        }
-        if ($value < $minValue) {
-            $minValue = $value;
+    $count = count($arr);
+    for ($i = 1; $i < $count; $i++) {
+        if ($arr[$i] > $max_value) {
+            $max_value = $arr[$i];
+        } elseif ($arr[$i] < $min_value) {
+            $min_value = $arr[$i];
         }
     }
 
-   
-    return ['max' => $maxValue, 'min' => $minValue];
+    return ['maximum' => $max_value, 'minimum' => $min_value];
 }
 
-
-$numbers = [14, 27, 5, 18, 9];
-$result = findMaxMin($numbers);
-echo "Max: " . $result['max'] . ", Min: " . $result['min'];
+// Example usage:
+$array = [3, 5, 1, 9, 7];
+$result = findMaxMinDifferent($array);
+echo "Maximum: " . $result['maximum'] . ", Minimum: " . $result['minimum'];

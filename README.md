@@ -1,1 +1,1 @@
-# 3-Find-Max-and-Min-in-Array
+OUTPUT : Maximum: 90, Minimum: 38

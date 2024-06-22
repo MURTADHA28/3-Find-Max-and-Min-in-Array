@@ -18,7 +18,7 @@ function findMaxMin($array) {
     return ['max' => $maxValue, 'min' => $minValue];
 }
 
-// Example usage:
+
 $numbers = [14, 27, 5, 18, 9];
 $result = findMaxMin($numbers);
 echo "Max: " . $result['max'] . ", Min: " . $result['min'];

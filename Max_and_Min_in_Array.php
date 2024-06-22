@@ -18,7 +18,7 @@ function findMaxMinDifferent($arr) {
     return ['maximum' => $max_value, 'minimum' => $min_value];
 }
 
-// Example usage:
-$array = [3, 5, 1, 9, 7];
+
+$array = [38, 56, 50, 90, 55];
 $result = findMaxMinDifferent($array);
 echo "Maximum: " . $result['maximum'] . ", Minimum: " . $result['minimum'];
